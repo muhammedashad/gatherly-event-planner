@@ -21,7 +21,8 @@ Project: **Gatherly — Celebration & Event Planner**
 - [x] Source kept well below the 10 MB limit; exclude node_modules and credentials.
 - [ ] Live AI generation configured and verified.
 - [ ] Browser functionality and mobile layout verified.
-- [ ] Public GitHub URL created and checked without authentication.
+- [x] Public GitHub repository created; source folder structure and project links added.
+- [x] Static planner publicly deployed on Netlify and desktop overview checked.
 - [ ] Full application deployed and checked without authentication.
 - [ ] Actual product demo recorded and uploaded with reviewer access.
 - [ ] LinkedIn post published with the user's authorization.
@@ -31,7 +32,7 @@ Project: **Gatherly — Celebration & Event Planner**
 
 Gatherly brings event details, budgets, timelines, vendors and creative ideas into one responsive workspace. Users can plan weddings, birthdays and community events, enter an INR budget and guest count, receive exact category allocations with a contingency reserve, track spending, complete date-based tasks and maintain vendor shortlists and quotes. Plans are saved on the device and can be exported as JSON or printed. The implementation includes input validation, accessible form labels, keyboard support, server-side AI handling, request limits and automated tests.
 
-This text describes the implemented source. Do not claim these changes are deployed until deployment is verified.
+The planner is deployed at the link below. The server-side AI integration is present in source, but is not active on the static Netlify deployment.
 
 ## GenAI services field — use ONLY after a successful live test
 
@@ -53,8 +54,9 @@ The focus: practical planning, thoughtful details and a clear view of what comes
 
 ## Links still required
 
-Public repository: not yet available.
-Deployed full app: not yet available.
+Public repository: https://github.com/muhammedashad/gatherly-event-planner
+Deployed static planner: https://vermillion-cucurucho-658e45.netlify.app/
+Deployed AI backend: not yet available.
 Demo video: not recorded or uploaded.
 LinkedIn post: not published.
 

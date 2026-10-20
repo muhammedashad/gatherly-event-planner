@@ -2,11 +2,15 @@
 
 An event-planning workspace for weddings, birthdays and community events. Built for PromptWars Challenge 5.
 
+**Live planner:** https://vermillion-cucurucho-658e45.netlify.app/
+
+**Source repository:** https://github.com/muhammedashad/gatherly-event-planner
+
 ## Current status
 
 Implemented: event creation/editing, exact INR budget allocations, spending tracker, task timeline, custom tasks, vendor checklist, local persistence, JSON export, print styling, responsive layout, and a server-side OpenAI integration.
 
-The live OpenAI connection has **not** been configured or tested. Sample ideas are explicitly labeled. This project must not be represented as a completed GenAI submission until real generation and public deployment have been verified.
+The planner is publicly deployed on Netlify. The live OpenAI connection has **not** been configured or tested. Sample ideas are explicitly labeled. The deployed static planner does not run the AI backend; live generation remains required before claiming a completed GenAI submission.
 
 ## Run locally
 
@@ -34,13 +38,13 @@ Event details and questions are transmitted only when the visitor asks for AI ge
 
 For the complete app, deploy `server.mjs` to a Node-compatible host, configure `HOST=0.0.0.0`, its assigned `PORT`, and the private AI environment variables. The server defaults to loopback for local development. Use HTTPS and set hosting-level rate limits for public traffic.
 
-For a planner-only static preview, publish `dist/`. Static hosting alone does not execute `server.mjs` or enable AI. `.openai/hosting.json` currently declares this static preview and is tied to the existing Sites project. Do not submit a planner-only preview as a verified GenAI app.
+For the planner-only static deployment, publish the contents of `dist/`, with `index.html` at the upload root. Static hosting alone does not execute `server.mjs` or enable AI. Do not submit a planner-only preview as a verified GenAI app.
 
 The per-IP limiter is process-local (five AI requests per minute), suitable for a small single-instance demonstration. Use shared rate-limit storage and provider budgets for multi-instance public deployments.
 
 ## Design and accessibility
 
-Sage, warm ivory and terracotta; original CSS floral illustration; no external fonts, images or scripts. Semantic navigation and tables, form labels, native modal focus behavior, keyboard focus indicators, error/status announcements, a skip link, responsive layouts, and print CSS are included. Browser/visual and screen-reader QA remain unverified in the current environment.
+Sage, warm ivory and terracotta; original CSS floral illustration; no external fonts, images or scripts. Semantic navigation and tables, form labels, native modal focus behavior, keyboard focus indicators, error/status announcements, a skip link, responsive layouts, and print CSS are included. The deployed desktop overview was visually checked. Full browser interaction, mobile and screen-reader QA remain pending.
 
 ## Correctness and security
 
@@ -69,6 +73,6 @@ Keep `dist/planner.mjs` synchronized with `lib/planner.mjs` after edits.
 
 ## Validation performed
 
-Ten automated tests passed on 20 October 2026. JavaScript syntax checks passed. No real model request, browser interaction recording, public deployment, or competition submission has been verified.
+Ten automated tests passed on 20 October 2026. JavaScript syntax checks passed. The public Netlify planner and desktop overview were verified. Live model requests, a demo recording and competition submission remain pending.
 
 Official API reference: https://developers.openai.com/api/reference/resources/responses/methods/create
